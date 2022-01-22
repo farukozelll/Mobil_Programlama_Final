@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF1744">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mesajlar_item_imgKullaniciProfil"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:src="?android:attr/fingerprintAuthDrawable"
+            app:civ_border_color="@android:color/black"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/mesajlar_item_txtKullaniciIsim"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/mesajlar_item_imgSagYon"
+
+            android:layout_toRightOf="@id/mesajlar_item_imgKullaniciProfil"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mesajlar_item_txtSonMesaj"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mesajlar_item_txtKullaniciIsim"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/mesajlar_item_imgSagYon"
+            android:layout_toRightOf="@id/mesajlar_item_imgKullaniciProfil"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/mesajlar_item_imgSagYon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_sag_yon" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
